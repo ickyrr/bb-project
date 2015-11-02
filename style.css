@@ -1,0 +1,182 @@
+html, body{
+	height: 100%;
+	background-image:url('img/bg1.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+/*
+Note:
+Gin sugad ko hini ky damo nga elements it pareho it style
+pareho han iyo h1,h2,h3,h4,h5,h6,p..so para mas madali gin body
+ko nala para tanan nga text ha body masusugad it style.
+*/
+body{
+	font-family: 'Calibri';
+	color: black;
+}
+h1,h4,h6{
+	font-weight: bolder;
+}
+
+/*
+Tanan nga box element ha bootstrap pareho hinin na container
+myda daan padding. Ini hiya gnppwersa niya tanggalon it padding
+ha bootstrap
+*/
+.container-fluid{
+	padding: 0 !important;
+}
+.container{
+	width:77%;
+}
+
+.thumb1{
+	height: 200px;
+}
+
+.imgthumb{
+	opacity: 1;
+}
+.imgthumb:hover{
+	opacity: 0.4;
+}
+.leyte,
+.back{
+ position: top;
+}
+
+/*hover effect*/
+header{
+	position: relative;
+	height: 100vh;
+}
+.front img,
+.back img{
+	height: 100vh;
+	width: 100%;
+}
+.front,
+.back{
+	position: absolute;
+	border-bottom: 3px solid #111;
+}
+.front{
+	z-index: 2;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+.front:hover{
+	opacity: 0;
+}
+/*end hover effect*/
+
+/*MAIN CONTENT STYLE*/
+section#main-content{
+	position: relative;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+section#main-content,
+section#related-topics{
+	padding-left:20px;
+	padding-right: 20px;
+}
+section#main-content h1{
+	margin-top: 0;
+}
+.official-seal img {
+    margin: 0 auto;
+}
+
+#myCarousel{
+	margin-top: 25px;
+}
+.left-side{
+	margin-bottom: 25px;
+}
+.carousel-caption{
+	background-color: rgba(1,1,1,0.6);
+	padding: 25px;
+	width: 100%;
+	left: 0 !important;
+	bottom: 0 !important;
+	right: 0 !important;
+}
+.info-la{
+	margin-top: 25px;
+}
+.carousel img{
+	width: 100%;
+}
+/*END MAIN CONTENT STYLE*/
+
+
+/*RELATED TOPICS STYLE*/
+section#related-topics{
+	margin-bottom: 25px;
+}
+.thumbnails a{
+	display: inline-block;
+	border:1px solid #fff;
+	background-color: transparent;
+	margin: auto auto;
+}
+.abe-logo img{
+	width: 180px;
+	height: 76px;
+	position: relative;
+	bottom: -100px;
+    right: -100px;
+}
+.pg-header{
+	border-bottom: 1px solid #fff;
+	width: 75%;
+	margin-bottom: 25px;
+}
+/*END RELATED TOPICS STYLE*/
+
+footer{
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	margin-bottom: 50px;
+	padding: 25px;
+}
+
+/*TOP DESTINATIONS CSS*/
+.thumbnail{
+	background-color: transparent;
+}
+.the-leyte{
+	margin-bottom: 25px;
+}
+.the-leyte img,
+.sep img{
+	text-align: center;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 768px){
+	.abe-logo img{
+		position: relative;
+		bottom: 0;
+	    right: 0;
+	}
+	.abe-logo {
+	    margin: 0 auto;
+	    text-align: center;
+	}
+}
+@media screen and (max-width: 992px){
+	.abe-logo img{
+		position: relative;
+		bottom: 0;
+	    right: 0;
+	}
+	.abe-logo {
+	    margin: 0 auto;
+	    text-align: center;
+	}
+}
